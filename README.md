@@ -1,4 +1,4 @@
-# Quadrotor-Attitude-Control
+# 四旋翼飞机姿态控制
 ## 概述
 + `Attitude_Control_2nd_Linear_ADRC.m` 包含四旋翼飞机建模，控制系统建模与分析相关代码，Simulink 模型可见 `Attitude_Control_2nd_Linear_ADRC_Simulink.slx`<br><br>
 + `transfer_solve.m` 包含二阶线性ADRC系统的传递函数推导相关代码<br><br>
