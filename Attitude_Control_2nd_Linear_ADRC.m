@@ -73,10 +73,11 @@ gs_ol = tf([3261*beta_03 + 3261*b_0*beta_01*beta_1 + 3261*b_0*beta_02*beta_2, 32
 K_star = 87.39 / 0.04; % 开环根轨迹增益
 gs_ol_nor = tf([1, 2.687, 2.985], [1, 34.8, 452, 0, 0, 0]); % gs_ol = K_star * gs_ol_nor
 
+[Wn, Zeta, Pole] = damp(gs_ol); % 开环传递函数自然频率，阻尼比，极点
+Zero = zero(gs_ol); % 开环传递函数零点
+
 % 闭环传递函数 Gcl(s)
 gs_cl = tf([3261*b_0*beta_1, 3261*b_0*beta_01*beta_1, 3261*b_0*beta_1*beta_02, 3261*b_0*beta_1*beta_03], [100000*b_0, 100000*beta_2*b_0^2 + 100000*beta_01*b_0, 100000*b_0*beta_02 + 100000*b_0^2*beta_1 + 100000*b_0^2*beta_01*beta_2, 3261*beta_03 + 3261*b_0*beta_01*beta_1 + 3261*b_0*beta_02*beta_2, 3261*b_0*beta_1*beta_02 + 3261*b_0*beta_2*beta_03, 3261*b_0*beta_1*beta_03]);
-
-[Wn, Zeta, Pole] = damp(gs_ol); % 开环传递函数自然频率，阻尼比，极点
 
 %% 根轨迹
 figure('Name','Root Locus')
@@ -105,7 +106,7 @@ Pm = S.PhaseMargin;
 %% 时域特性
 
 [Wn1, Zeta1, Pole1] = damp(gs_cl); % 闭环传递函数自然频率，阻尼比，极点
-Zeros1 = zero(gs_cl); % 闭环传递函数零点
+Zero1 = zero(gs_cl); % 闭环传递函数零点
 
 T = 1 / Wn1(1); % 一阶系统时间常数
 omega_n = Wn1(3); % 欠阻尼系统自然频率
