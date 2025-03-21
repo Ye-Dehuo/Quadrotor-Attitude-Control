@@ -217,7 +217,7 @@ Based on the grading figure, the small-amplitude/high-frequency attitude change 
 
 Medium-amplitude/medium-low-frequency attitude changes are often used to evaluate the ability of a quadrotor to achieve rapid attitude changes
 
-The ADS-33 document uses agility to evaluate medium-amplitude/medium-low-frequency attitude changes. The agility metric is defined as the ratio of the peak angular velocity to the maximum attitude change after a medium-amplitude/medium-low-frequency attitude change, i.e., $\frac{q_{p k}}{\Delta \theta_{p k}}$
+The *ADS-33* uses agility to evaluate medium-amplitude/medium-low-frequency attitude changes. The agility metric is defined as the ratio of the peak angular velocity to the maximum attitude change after a medium-amplitude/medium-low-frequency attitude change, i.e., $\frac{q_{p k}}{\Delta \theta_{p k}}$
 
 Assuming a yaw attitude change of 30° , the yaw angle response and yaw rate response are shown below:
 
