@@ -313,8 +313,8 @@ The open-loop system has three poles at the origin, making it a Type III system.
 
 ## References
 
-[1] Li Yi, Chen Zengqiang, Liu Zhongxin. Attitude control of a quad-rotor robot based on ADRC [J]. Journal of Harbin Institute of Technology, 2014, 46(3):5.DOI:10.11918/j.issn.0367-6234.2014.03.020. (in CHinese)
+[1] Li Yi, Chen Zengqiang, Liu Zhongxin. Attitude control of a quad-rotor robot based on ADRC [J]. Journal of Harbin Institute of Technology, 2014, 46(3):5.DOI:10.11918/j.issn.0367-6234.2014.03.020. (in Chinese)
 
 [2] Research Report on Flight Quality Standards for Multi-Rotor Aircraft. Shenzhen Institute of Standards and Technology, 2020. (in Chinese)
 
-[3] ADS-33E-PRF. United States Army Aviation and Missile Command (AMCOM) Aviation Engineering Directorate, Redstone Arsenal, Alabama, 2020.
+[3] ADS-33E-PRF. United States Army Aviation and Missile Command (AMCOM) Aviation Engineering Directorate, Redstone Arsenal, Alabama, 2000.
