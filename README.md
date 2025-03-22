@@ -199,7 +199,7 @@ The phase margin is 36.22°
 
 The handling quality standards are referenced from literature<sup>[2, 3]</sup>
 
-(1) Small-Amplitude/High-Frequency Attitude Changes
+#### 1. Small-Amplitude/High-Frequency Attitude Changes
 
 The evaluation metrics for small-amplitude/high-frequency attitude changes are bandwidth and phase delay. A quadrotor with a larger bandwidth and smaller phase delay can track command inputs more quickly, resulting in a better evaluation grade. The definitions of bandwidth and phase delay are as follows:
 
@@ -213,7 +213,7 @@ Based on the grading figure, the small-amplitude/high-frequency attitude change 
 
 ![alt](/img/Small_Amplitude_Attitude_Level_Diagram.png)
 
-(2) Medium-Amplitude/Medium-Low-Frequency Attitude Changes
+#### 2. Medium-Amplitude/Medium-Low-Frequency Attitude Changes
 
 Medium-amplitude/medium-low-frequency attitude changes are often used to evaluate the ability of a quadrotor to achieve rapid attitude changes
 
