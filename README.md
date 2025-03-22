@@ -217,11 +217,7 @@ Based on the grading figure, the small-amplitude/high-frequency attitude change 
 
 Medium-amplitude/medium-low-frequency attitude changes are often used to evaluate the ability of a quadrotor to achieve rapid attitude changes
 
-<<<<<<< HEAD
-ADS-33 文件使用快速性来评价中幅/中低频姿态变化。快速性指标涉及 3 个变化量，分别为姿态变化量峰值 $\Delta \theta_{p k}​$，姿态变化量极小值$\Delta \theta_{\min }​$ 与角速度峰值 $q_{p k} ​$。快速性指标通过中幅/中低频姿态变化发生后（ $\Delta \theta_{\min }​$ 可反映姿态变化角大小），角速度峰值与最大姿态变化量之比（即 $\frac{q_{p k}}{\Delta \theta_{p k}}​$ ）来衡量
-=======
-The *ADS-33* uses agility to evaluate medium-amplitude/medium-low-frequency attitude changes. The agility metric is defined as the ratio of the peak angular velocity to the maximum attitude change after a medium-amplitude/medium-low-frequency attitude change, i.e., $\frac{q_{p k}}{\Delta \theta_{p k}}$
->>>>>>> 939b8b976c34b33bee32e1a786010a340e376445
+The *ADS-33* uses agility to evaluate medium-amplitude/medium-low-frequency attitude changes.The agility metric involves three variables: the peak attitude change $\Delta \theta_{p k}​$ , the minimum attitude change $\Delta \theta_{\min }​$ (reflecting the magnitude of attitude change), and the peak angular velocity $q_{p k}$. The agility metric is defined as the ratio of the peak angular velocity to the maximum attitude change after a medium-amplitude/medium-low-frequency attitude change, i.e., $\frac{q_{p k}}{\Delta \theta_{p k}}$
 
 Assuming a yaw attitude change of 30° , the yaw angle response and yaw rate response are shown below:
 
