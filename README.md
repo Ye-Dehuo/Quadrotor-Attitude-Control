@@ -103,7 +103,7 @@ $C_{11}(s) = C_1(s)C_{pole}(s) = C_1(s) \frac{1}{\frac{1}{f_p}s + 1}$
 
 The selection of $f_p$ should ensure that the newly introduced pole frequency is significantly higher than the original pole frequency, so that the added pole does not affect the original transfer function. Here, $f_p = 1000$
 
-## Control System Establishment and Analysis
+## 3. Control System Establishment and Analysis
 
 Based on the attitude dynamics model of the quadrotor, the state observer LESO, and the error feedback law LSEF, the following control system can be established:
 
