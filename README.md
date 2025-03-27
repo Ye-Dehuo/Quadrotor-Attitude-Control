@@ -245,7 +245,7 @@ Thus,
 
 $\frac{r_{p k}}{\Delta \psi_{p k}} = 1.16$
 
-Based on the grading figure, the medium-amplitude/medium-low-frequency attitude change grade of the closed-loop system is Level II
+Based on the grading figure, the medium-amplitude/medium-low-frequency attitude change grade of the closed-loop system is Level I
 
 ![alt](/img/Medium_Amplitude_Attitude_Level_Diagram.png)
 
