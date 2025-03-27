@@ -207,7 +207,11 @@ The evaluation metrics for small-amplitude/high-frequency attitude changes are b
 
 ![alt](/img/Bandwidth_and_Phase_Delay.png)
 
-From the Bode plot, the closed-loop system bandwidth is $\omega_b = 9 \ rad/s$
+The response-type is Attitude Command
+
+![alt](/img/Bode Plot of the Closed Loop System.png)
+
+From the Bode plot above, the bandwidth is $\omega_{BW} = \omega_{BW_{phase}} = 4.5 \ rad/s$
 
 The phase delay is $\tau_{\mathrm{p}}=\frac{\Delta \phi_{2 \omega_{180}}}{2 \omega_{180}} = \frac{40}{38} = 1.1 \ sec​$
 
