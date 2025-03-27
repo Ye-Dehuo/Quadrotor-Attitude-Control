@@ -93,13 +93,15 @@ nyquist(gs_ol);
 figure('Name','Bode Plot')
 bode(gs_ol);
 
-figure('Name','Bode Plot 2')
+figure('Name','Bode Plot of the Closed Loop System') % Bode plot of the closed loop system
 bode(gs_cl);
 
 % Gain and phase margins
 S = allmargin(gs_ol);
 Gm = S.GainMargin;
 Pm = S.PhaseMargin;
+Gm_1_dB = 20*log10(Gm(1));
+Gm_2_dB = 20*log10(Gm(2));
 
 [Gm1,Pm1,Wgm,Wpm] = margin(gs_ol);
 
@@ -127,4 +129,3 @@ sigma_2 = exp(-pi*zeta/sqrt(1-zeta^2));
 % Settling time
 ts_1 = 3 * T;
 ts_2 = 3.5/(zeta * omega_n);
-```
