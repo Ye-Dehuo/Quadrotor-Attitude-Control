@@ -213,7 +213,7 @@ The Bode plot of the closed loop system is as follows:
 
 ![alt](/img/Bode_Plot_of_the_Closed_Loop_System.png)
 
-From the Bode plot above, the bandwidth is $\omega_{BW} = \omega_{BW_{phase}} = 4.5 \ rad/s$
+From the Bode plot above, the bandwidth is $\omega_{BW} = \omega_{BW_{phase}} = 4.5 \ rad/s / (0.7Hz)$
 
 The phase delay $\tau_{\mathrm{p}} =  0 \ sec​$
 
@@ -248,6 +248,8 @@ $\frac{r_{p k}}{\Delta \psi_{p k}} = 1.16$
 Based on the grading figure, the medium-amplitude/medium-low-frequency attitude change grade of the closed-loop system is Level I
 
 ![alt](/img/Medium_Amplitude_Attitude_Level_Diagram.png)
+
+**Additional Note**: Although the input signal used in the simulaztion is small-amplitude/medium-low frequency, good experimental results can still be obtained by changing the input signal to small-amplitude/high-frequency or medium-amplitude/medium-low frequency
 
 ### Time-Domain Characteristics Analysis
 
