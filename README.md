@@ -199,7 +199,7 @@ The phase margin is 36.22°
 
 The handling quality standards are referenced from literature<sup>[2, 3]</sup> <br>
 
-In this project, the quadrotor is in the low-speed state
+In this project, the quadrotor is in the low-speed state and the response-type is Attitude Command
 
 #### 1. Small-Amplitude/High-Frequency Attitude Changes
 
@@ -207,13 +207,15 @@ The evaluation metrics for small-amplitude/high-frequency attitude changes are b
 
 ![alt](/img/Bandwidth_and_Phase_Delay.png)
 
-The response-type is Attitude Command
+The phase delay is $\tau_{\mathrm{p}}=\frac{\Delta \phi_{2 \omega_{180}}}{2 \omega_{180}}$
+
+The Bode plot of the closed loop system is as follows:
 
 ![alt](/img/Bode_Plot_of_the_Closed_Loop_System.png)
 
 From the Bode plot above, the bandwidth is $\omega_{BW} = \omega_{BW_{phase}} = 4.5 \ rad/s$
 
-The phase delay is $\tau_{\mathrm{p}}=\frac{\Delta \phi_{2 \omega_{180}}}{2 \omega_{180}} = \frac{40}{38} = 1.1 \ sec​$
+The phase delay $\tau_{\mathrm{p}} =  0 \ sec​$
 
 Based on the grading figure, the small-amplitude/high-frequency attitude change grade of the closed-loop system is Level I
 
@@ -223,7 +225,7 @@ Based on the grading figure, the small-amplitude/high-frequency attitude change 
 
 Medium-amplitude/medium-low-frequency attitude changes are often used to evaluate the ability of a quadrotor to achieve rapid attitude changes
 
-The *ADS-33* uses agility to evaluate medium-amplitude/medium-low-frequency attitude changes.The agility metric involves three variables: the peak attitude change $\Delta \theta_{p k}​$ , the minimum attitude change $\Delta \theta_{\min }​$ (reflecting the magnitude of attitude change), and the peak angular velocity $q_{p k}$. The agility metric is defined as the ratio of the peak angular velocity to the maximum attitude change after a medium-amplitude/medium-low-frequency attitude change, i.e., $\frac{q_{p k}}{\Delta \theta_{p k}}$
+The *ADS-33* uses agility to evaluate medium-amplitude/medium-low-frequency attitude changes.The agility metric involves three variables: the peak attitude change $\Delta \psi_{p k}​$ , the minimum attitude change $\Delta \psi_{\min }​$ (reflecting the magnitude of attitude change), and the peak angular velocity $r_{p k}$. The agility metric is defined as the ratio of the peak angular velocity to the maximum attitude change after a medium-amplitude/medium-low-frequency attitude change, i.e., $\frac{r_{p k}}{\Delta \psi_{p k}}$
 
 Assuming a yaw attitude change of 30° , the yaw angle response and yaw rate response are shown below:
 
@@ -233,15 +235,15 @@ Assuming a yaw attitude change of 30° , the yaw angle response and yaw rate res
 
 (The unit of the vertical axis in the figure is based on radians)
 
-The peak attitude change is $\Delta \theta_{p k} = 30.31°$
+The peak attitude change is $\Delta \psi_{p k} = 30.31°$
 
-The minimum attitude change is $\Delta \theta_{\min } = 29.79°$
+The minimum attitude change is $\Delta \psi_{\min } = 29.79°$
 
-The peak angular velocity is $q_{p k} = 35.2°/s$
+The peak angular velocity is $r_{p k} = 35.2°/s$
 
 Thus,
 
-$\frac{q_{p k}}{\Delta \theta_{p k}} = 1.16$
+$\frac{r_{p k}}{\Delta \psi_{p k}} = 1.16$
 
 Based on the grading figure, the medium-amplitude/medium-low-frequency attitude change grade of the closed-loop system is Level II
 
