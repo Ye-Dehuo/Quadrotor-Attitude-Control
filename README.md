@@ -197,7 +197,9 @@ The phase margin is 36.22°
 
 ### Handling Quality Analysis
 
-The handling quality standards are referenced from literature<sup>[2, 3]</sup>
+The handling quality standards are referenced from literature<sup>[2, 3]</sup> <br>
+
+In this project, the quadrotor is in the low-speed state
 
 #### 1. Small-Amplitude/High-Frequency Attitude Changes
 
