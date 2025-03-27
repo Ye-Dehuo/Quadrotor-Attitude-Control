@@ -209,7 +209,7 @@ The evaluation metrics for small-amplitude/high-frequency attitude changes are b
 
 The response-type is Attitude Command
 
-![alt](/img/Bode Plot of the Closed Loop System.png)
+![alt](/img/Bode_Plot_of_the_Closed_Loop_System.png)
 
 From the Bode plot above, the bandwidth is $\omega_{BW} = \omega_{BW_{phase}} = 4.5 \ rad/s$
 
