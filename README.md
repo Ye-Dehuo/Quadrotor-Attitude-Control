@@ -253,6 +253,10 @@ Based on the grading figure, the medium-amplitude/medium-low-frequency attitude 
 
 Although the input signal used in the simulaztion is small-amplitude/medium-low-frequency, good experimental results can still be obtained by changing the input signal to small-amplitude/high-frequency or medium-amplitude/medium-low-frequency
 
+![alt](/img/Small_Amplitude_High_Frequency_Attitude_Changes.png)
+
+![alt](/img/Medium_Amplitude_Medium_Low_Frequency_Attitude_Changes.png)
+
 ### Time-Domain Characteristics Analysis
 
 The pole distribution of the closed-loop system is shown below:
