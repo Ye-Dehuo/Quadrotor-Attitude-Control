@@ -189,11 +189,12 @@ The Bode plot is shown below:
 
 ![alt](/img/bode.png)
 
-The gain margin is [0.29, 5.75] (or [-10.81dB, 15.19dB])
+The gain margin is [0.29, 5.75] (or [-10.81dB, 15.19dB]) (generally required $6dB < h(dB)$)
+
 
 Taking $\omega \in [0 , +\infty]$ as an example, the corresponding curve in the Nyquist plot starts from the upper left and intersects the negative real axis at two points. A gain margin of 0.29 indicates that if the open-loop magnitude frequency characteristic is increased by 0.29 times (i.e., reduced by approximately 3.4 times), the left intersection point will move to (-1,0). At this point, the Nyquist plot will just include (-1,0), and the system will be in a critically stable state. A gain margin of 5.75 indicates that if the open-loop magnitude frequency characteristic is increased by 5.75 times, the right intersection point will move to (-1,0). At this point, the Nyquist plot will just include (-1,0), and the system will be in a critically stable state
 
-The phase margin is 36.22°
+The phase margin is 36.22° (generally required $30^\circ < \gamma < 60^\circ$)
 
 ### Handling Quality Analysis
 
