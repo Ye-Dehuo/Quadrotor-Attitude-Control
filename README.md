@@ -204,7 +204,7 @@ In this project, the quadrotor is in the low-speed state and the response-type i
 
 #### 1. Small-Amplitude/High-Frequency Attitude Changes
 
-The evaluation metrics for small-amplitude/high-frequency attitude changes are bandwidth and phase delay. A quadrotor with a larger bandwidth and smaller phase delay can track command inputs more quickly, resulting in a better evaluation grade. The definitions of bandwidth and phase delay are as follows:
+The evaluation metrics for small-amplitude/high-frequency attitude changes are bandwidth and phase delay. A quadrotor with a larger bandwidth and smaller phase delay can track high frequency command inputs more quickly, resulting in a better evaluation grade. The definitions of bandwidth and phase delay are as follows:
 
 ![alt](/img/Bandwidth_and_Phase_Delay.png)
 
