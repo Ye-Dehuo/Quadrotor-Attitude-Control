@@ -282,7 +282,7 @@ The system response is primarily determined by the remaining real pole and the p
 
 + The real pole $P_1 = (-2.2927, 0)$, corresponding to a first-order system with a time constant $T = \frac{1}{w} = 0.436$
 
-+ The complex conjugate poles are $P_2 = ( -1.9687, 2.7082) \ \ \ P_3 = (-1.9687, -2.7082)$, corresponding to an underdamped system with a natural frequency $w_{n} = 3.348$ and a damping ratio $\zeta = 0.588$
++ The complex conjugate poles are $P_2 = ( -1.9687, 2.7082) \ \ \ P_3 = (-1.9687, -2.7082)$, corresponding to an underdamped system with a natural frequency $w_{n} = 3.348$ and a damping ratio $\zeta = 0.588$ (According to *ADS-33*, $\zeta \ge 0.35$ satisfies good quality)
 
 Under a step input:
 
