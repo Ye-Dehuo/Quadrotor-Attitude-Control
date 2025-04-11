@@ -208,7 +208,7 @@ The evaluation metrics for small-amplitude/high-frequency attitude changes are b
 
 ![alt](/img/Bandwidth_and_Phase_Delay.png)
 
-The phase delay is $\tau_{\mathrm{p}}=\frac{\Delta \phi_{2 \omega_{180}}}{2 \omega_{180}}$
+The phase delay is $\tau_{\mathrm{p}}=\frac{\Delta \phi_{2 \omega_{180}}}{57.3 \left ( 2 \omega_{180} \right )}$
 
 The Bode plot of the closed loop system is as follows:
 
