@@ -310,7 +310,7 @@ Under a step input:
 
   + Underdamped system overshoot: $\sigma_2 \\%=\mathrm{e}^{-\pi \zeta / \sqrt{1-\zeta^2}} \times 100 \\% = 10\\%$
 
-  + Actual system overshoot: $\sigma \\%= 1\\%$
+  + Actual system overshoot: $\sigma \\%= 1\\%$ (generally $1.5\\% < \sigma \\% < 25.4\\%$)
 
 + Settling Time
 
