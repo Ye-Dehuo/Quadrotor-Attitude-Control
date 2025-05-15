@@ -79,6 +79,44 @@ Zero = zero(gs_ol); % Zeros of the open-loop transfer function
 % Closed-loop transfer function Gcl(s)
 gs_cl = tf([3261*b_0*beta_1, 3261*b_0*beta_01*beta_1, 3261*b_0*beta_1*beta_02, 3261*b_0*beta_1*beta_03], [100000*b_0, 100000*beta_2*b_0^2 + 100000*beta_01*b_0, 100000*b_0*beta_02 + 100000*b_0^2*beta_1 + 100000*b_0^2*beta_01*beta_2, 3261*beta_03 + 3261*b_0*beta_01*beta_1 + 3261*b_0*beta_02*beta_2, 3261*b_0*beta_1*beta_02 + 3261*b_0*beta_2*beta_03, 3261*b_0*beta_1*beta_03]);
 
+%% Simulation
+sim('Attitude_Control_2nd_Linear_ADRC_Simulink');
+
+%% Simulation Results Plot
+RTD = 180 / pi; % rad to degree
+
+figure('name','Yaw Angle')
+plot(t,v0_yaw * RTD,'b:',t,yaw,'r-','LineWidth',2);
+xlabel('time(s)');
+ylabel('yaw angle(бу)');
+legend('Desired','Actual');
+grid on;
+title('Yaw Angle');
+
+figure('name','Pitch Angle')
+plot(t,v0_pitch * RTD,'b:',t,pitch,'r-','LineWidth',2);
+xlabel('time(s)');
+ylabel('pitch angle(бу)');
+legend('Desired','Actual');
+grid on;
+title('Pitch Angle');
+
+figure('name','Roll Angle')
+plot(t,v0_roll * RTD,'b:',t,roll,'r-','LineWidth',2);
+xlabel('time(s)');
+ylabel('roll angle(бу)');
+legend('Desired','Actual');
+grid on;
+title('Roll Angle');
+
+figure('name','Voltage')
+plot(t,v(:,1),'b:',t,v(:,2),'r-',t,v(:,3),'g-.',t,v(:,4),'m--','LineWidth',2);
+xlabel('time(s)');
+ylabel('voltage(V)');
+legend('v_f','v_b','v_r','v_l');
+grid on;
+title('Voltage');
+
 %% Root Locus Analysis
 figure('Name','Root Locus')
 rlocus(gs_ol_nor);

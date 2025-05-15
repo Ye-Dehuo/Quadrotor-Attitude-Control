@@ -65,8 +65,7 @@ Rewriting in state-space form:<br>
 
 where:
 
-+ $\beta_1, ~ \beta_2$ are tunable parameters; $e_1=r_1-z_1, e_2=r_2-z_2$ are system state errors. To address potential sensor limitations, the system attitude error is rewritten as $e_1=r-z_1, e_2=-z_2$ (By considering $r_2$ as 0, as long as $\beta1 > \beta2$, making $e_1$ a more dominant control term than $e_2$, treating $r_2$ as 0 will not affect the control outcome)
-
++ $\beta_1, ~ \beta_2$ are tunable parameters; $e_1=r_1-z_1, e_2=r_2-z_2$ are system state errors. In this design method, the TD (Tracking Differentiator) is not used, therefore $r_2 = 0$ , the system attitude error is rewritten as $e_1=r-z_1, e_2=-z_2$ (As long as $\beta1 > \beta2$, making $e_1$ a more dominant control term than $e_2$, $r_2 = 0$ will not affect the control outcome)
 + The adjustable parameter $b_0$ is the "compensation factor" that determines the strength of the compensation
 
 ### System Transfer Function Derivation
@@ -189,12 +188,13 @@ The Bode plot is shown below:
 
 ![alt](/img/bode.png)
 
-The gain margin is [0.29, 5.75] (or [-10.81dB, 15.19dB]) (generally required $6dB < h \left ( dB \right ) $)
+The gain margin is 0.29 and 5.75
 
+Taking $\omega \in [0 , +\infty]$ as an example, the corresponding curve in the Nyquist plot starts from the upper left and intersects the negative real axis at two points. The gain margin 0.29 indicates that if the open-loop magnitude frequency characteristic is increased by 0.29 times (i.e., reduced by approximately 3.4 times), the left intersection point will move to (-1,0). At this point, the Nyquist plot will just include (-1,0), and the system will be in a critically stable state. The gain margin 5.75 indicates that if the open-loop magnitude frequency characteristic is increased by 5.75 times, the right intersection point will move to (-1,0). At this point, the Nyquist plot will just include (-1,0), and the system will be in a critically stable state
 
-Taking $\omega \in [0 , +\infty]$ as an example, the corresponding curve in the Nyquist plot starts from the upper left and intersects the negative real axis at two points. A gain margin of 0.29 indicates that if the open-loop magnitude frequency characteristic is increased by 0.29 times (i.e., reduced by approximately 3.4 times), the left intersection point will move to (-1,0). At this point, the Nyquist plot will just include (-1,0), and the system will be in a critically stable state. A gain margin of 5.75 indicates that if the open-loop magnitude frequency characteristic is increased by 5.75 times, the right intersection point will move to (-1,0). At this point, the Nyquist plot will just include (-1,0), and the system will be in a critically stable state
+Here, taking 5.75 as the gain margin (satisfying $10dB < h \left ( dB \right ) $)
 
-The phase margin is 36.22° (generally required $30^\circ < \gamma < 60^\circ$)
+The phase margin is 36.22° (satisfying $30^\circ < \gamma < 60^\circ$)
 
 ### Handling Quality Analysis
 
@@ -204,7 +204,7 @@ In this project, the quadrotor is in the low-speed state and the response-type i
 
 #### 1. Small-Amplitude/High-Frequency Attitude Changes
 
-The evaluation metrics for small-amplitude/high-frequency attitude changes are bandwidth and phase delay. A quadrotor with a larger bandwidth and smaller phase delay can track high frequency command inputs more quickly, resulting in a better evaluation grade. The definitions of bandwidth and phase delay are as follows:
+The evaluation criteria for small-amplitude ($0 \sim 10°$)/high-frequency ($\ge 0.5Hz$ , not sure) attitude changes are bandwidth and phase delay. A quadrotor with a larger bandwidth and smaller phase delay can track high frequency command inputs more quickly, resulting in a better evaluation rating. The definitions of bandwidth and phase delay are as follows:
 
 ![alt](/img/Bandwidth_and_Phase_Delay.png)
 
@@ -224,9 +224,9 @@ Based on the grading figure, the small-amplitude/high-frequency attitude change 
 
 #### 2. Medium-Amplitude/Medium-Low-Frequency Attitude Changes
 
-Medium-amplitude/medium-low-frequency attitude changes are often used to evaluate the ability of a quadrotor to achieve rapid attitude changes
+In *ADS-33*, medium-amplitude/medium-low-frequency attitude changes are often used to evaluate the 'attitude quickness' of a quadrotor (whether can achieve moderate attitude changes rapidly). What kind of attitude changes can be classified as medium-amplitude/medium-low-frequency? The required attitude changes shall be made as rapidly as possible from one steady heading to another and without significant reversals in the sign of the cockpit control input relative to the trim position
 
-The *ADS-33* uses agility to evaluate medium-amplitude/medium-low-frequency attitude changes.The agility metric involves three variables: the peak attitude change $\Delta \psi_{p k}​$ , the minimum attitude change $\Delta \psi_{\min }​$ (reflecting the magnitude of attitude change), and the peak angular velocity $r_{p k}$. The agility metric is defined as the ratio of the peak angular velocity to the maximum attitude change after a medium-amplitude/medium-low-frequency attitude change, i.e., $\frac{r_{p k}}{\Delta \psi_{p k}}$
+The evaluation criteria involves three variables: the peak attitude change $\Delta \psi_{p k}$ , the minimum attitude change $\Delta \psi_{\min }$ , and the peak angular velocity $r_{p k}$. The evaluation criteria is defined as the ratio of the peak angular velocity to the maximum attitude change after a medium-amplitude/medium-low-frequency attitude change, i.e., $\frac{r_{p k}}{\Delta \psi_{p k}}$. For a medium-amplitude/medium-low-frequency attitude change, a larger $r_{p k}$ , a smaller ${\Delta \psi_{p k}}$ and a larger $\Delta \psi_{\min }$ will result in a better evaluation rating
 
 Assuming a yaw attitude change of 30° , the yaw angle response and yaw rate response are shown below:
 
