@@ -250,9 +250,9 @@ Based on the grading figure, the medium-amplitude/medium-low-frequency attitude 
 
 ![alt](/img/Medium_Amplitude_Attitude_Level_Diagram.png)
 
-#### Additional Note:
+#### 3. Handing Quality Vertification
 
-Although the input signal used in the previous simulaztion is small-amplitude/medium-low-frequency, good experimental results can still be obtained by changing the input signal to small-amplitude/high-frequency or medium-amplitude/medium-low-frequency
+Although the input signal used in the main simulaztion is small-amplitude/medium-low-frequency, good experimental results can still be obtained by changing the input signal to small-amplitude/high-frequency or medium-amplitude/medium-low-frequency
 
 ![alt](/img/Small_Amplitude_High_Frequency_Attitude_Changes.png)
 
