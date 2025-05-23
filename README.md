@@ -5,7 +5,10 @@
 
 ## 1. Quadrotor Aircraft Modeling
 
+A quadrotor hovering experimental platform manufactured by *Quanser*, with a weight of approximately a few kilogram, is used to analysis the attitude control method<br>
+
 The state-space equation for a three-degree-of-freedom (attitude) quadrotor hovering system is formulated as<sup>[1]</sup> <br>
+
 ```math
 \left[\begin{array}{c}\dot{y} \\ \dot{p} \\ \dot{r} \\ \ddot{y} \\ \ddot{p} \\ \ddot{r}\end{array}\right]=\left[\begin{array}{llllll}0 & 0 & 0 & 1 & 0 & 0 \\ 0 & 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 & 0 & 0\end{array}\right]\left[\begin{array}{c}y \\ p \\ r \\ \dot{y} \\ \dot{p} \\ \dot{r}\end{array}\right] + \left[\begin{array}{cccc}0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ \frac{k_{t, c}}{J_y} & \frac{k_{t, c}}{J_y} & \frac{k_{t, n}}{J_y} & \frac{k_{t, n}}{J_y} \\ \frac{l k_f}{J_p} & -\frac{l k_f}{J_p} & 0 & 0 \\ 0 & 0 & \frac{l k_f}{J_r} & -\frac{l k_f}{J_r}\end{array}\right]\left[\begin{array}{c}v_f \\ v_b \\ v_r \\ v_l\end{array}\right]
 ```
@@ -27,7 +30,7 @@ where:
 
 + $J_p$, $J_r​$ are the moments of inertia about the pitch and roll axes, both valued at $0.0552 \mathrm{~kg} \cdot \mathrm{~m}^2$
 
-+ $l​$ is the distance from the rotation center to the propeller center, valued at $0.197 m$
++ $l$ is the distance from the rotation center to the propeller center, valued at $0.197 m$
 
 ## 2. ADRC Control Law
 
@@ -110,7 +113,9 @@ Based on the attitude dynamics model of the quadrotor, the state observer LESO, 
 
 ![alt](/img/Control_System_Block_Diagram_Simulink.png)
 
-In the diagram, the $K*u$ module converts the input attitude control commands into output voltage signals for the propeller motors
+In the diagram, the $K*u​$ module converts the input attitude control commands into output voltage signals for the propeller motors
+
+In this design, assuming the $3$ channels are independent, the quadrotor can perform attitude changes along $3$ axes simultaneously 
 
 ### Parameter Selection
 
