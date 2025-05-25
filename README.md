@@ -1,6 +1,11 @@
 # Quadrotor-Attitude-Control
 ## Overview
++ Based on relevant literature, a quadrotor dynamic model is established. Considering the susceptibility of quadrotor attitude control to disturbances, an attitude control algorithm is designed using the Active Disturbance Rejection Control (ADRC) method to control the three-axis attitude changes. The performance of the designed control system is analyzed to achieve the goal of high-performance attitude control for the quadrotor<br>
+
+  <br>
+
 + `Attitude_Control_2nd_Linear_ADRC.m` contains the modeling, control system design, and analysis code for the quadrotor aircraft. The corresponding Simulink model is available in `Attitude_Control_2nd_Linear_ADRC_Simulink.slx`<br><br>
+
 + `transfer_solve.m` includes the derivation of the transfer function for the second-order linear Active Disturbance Rejection Control (ADRC) system
 
 ## 1. Quadrotor Aircraft Modeling
