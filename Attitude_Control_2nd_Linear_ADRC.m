@@ -131,9 +131,6 @@ nyquist(gs_ol);
 figure('Name','Bode Plot')
 bode(gs_ol);
 
-figure('Name','Bode Plot of the Closed Loop System') % Bode plot of the closed loop system
-bode(gs_cl);
-
 % Gain and phase margins
 S = allmargin(gs_ol);
 Gm = S.GainMargin;
@@ -144,6 +141,13 @@ Gm_2_dB = 20*log10(Gm(2));
 [Gm1,Pm1,Wgm,Wpm] = margin(gs_ol);
 
 %% Handling Quality Analysis
+
+% Bode plot
+figure('Name','Bode Plot of the Closed Loop System') % Bode plot of the closed loop system
+bode(gs_cl);
+
+% bandwidth
+bw = bandwidth(gs_cl);
 
 %% Time-Domain Characteristics
 

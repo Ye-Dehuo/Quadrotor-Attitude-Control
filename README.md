@@ -200,7 +200,7 @@ The Bode plot is shown below:
 
 The gain margin is 0.29 and 5.75
 
-Taking $\omega \in [0 , +\infty]$ as an example, the corresponding curve in the Nyquist plot starts from the upper left and intersects the negative real axis at two points. The gain margin 0.29 indicates that if the open-loop magnitude frequency characteristic is increased by 0.29 times (i.e., reduced by approximately 3.4 times), the left intersection point will move to (-1,0). At this point, the Nyquist plot will just include (-1,0), and the system will be in a critically stable state. The gain margin 5.75 indicates that if the open-loop magnitude frequency characteristic is increased by 5.75 times, the right intersection point will move to (-1,0). At this point, the Nyquist plot will just include (-1,0), and the system will be in a critically stable state
+Taking $\omega \in [0 , +\infty]​$ as an example, the corresponding curve in the Nyquist plot starts from the upper left and intersects the negative real axis at two points. The gain margin 0.29 indicates that if the open-loop magnitude frequency characteristic is increased by 0.29 times (i.e., reduced by approximately 3.4 times), the left intersection point will move to (-1,0). At this point, the Nyquist plot will just include (-1,0), and the system will be in a critically stable state. The gain margin 5.75 indicates that if the open-loop magnitude frequency characteristic is increased by 5.75 times, the right intersection point will move to (-1,0). At this point, the Nyquist plot will just include (-1,0), and the system will be in a critically stable state
 
 Here, taking 5.75 as the gain margin (satisfying $10dB < h \left ( dB \right ) $)
 
@@ -224,11 +224,11 @@ The Bode plot of the closed loop system is as follows:
 
 ![alt](/img/Bode_Plot_of_the_Closed_Loop_System.png)
 
-From the Bode plot above, the bandwidth is $\omega_{BW} = \omega_{BW_{phase}} = 4.5 \ rad/s$ $(0.7Hz)$
+From the Bode plot above, the bandwidth is $\omega_{BW} = \omega_{BW_{phase}} = 2.7 \ rad/s$ $(0.43Hz)$
 
-The phase delay $\tau_{\mathrm{p}} =  0 \ sec​$
+The phase delay $\tau_{\mathrm{p}} =  0 \ sec$
 
-Based on the grading figure, the small-amplitude/high-frequency attitude change grade of the closed-loop system is Level I
+Based on the grading figure, the small-amplitude/high-frequency attitude change grade of the closed-loop system is Level II
 
 ![alt](/img/Small_Amplitude_Attitude_Level_Diagram.png)
 
