@@ -90,7 +90,7 @@ $\frac{U}{R} = \frac{\beta_1 s^3 + \beta_{01} \beta_1 s^2 + \beta_1 \beta_{02} s
 
 The transfer function between the input signal and the output signal is given by:
 
-$\frac{U}{Y} = \frac{- \beta_{03} - b_0 \beta_{01} \beta_1 - b_0 \beta_{02} \beta_2) s^2 + (- b_0 \beta_1 \beta_{02} - b_0 \beta_2 \beta_{03}) s - b_0 \beta_1 \beta_{03}}{b_0 s^3 + (\beta_2 b_0^2 + \beta_{01} b_0) s^2 + (b_0 \beta_{02} + b_0^2 \beta_1 + b_0^2 \beta_{01} \beta_2)s}$
+$\frac{U}{Y} = \frac{(- \beta_{03} - b_0 \beta_{01} \beta_1 - b_0 \beta_{02} \beta_2) s^2 + (- b_0 \beta_1 \beta_{02} - b_0 \beta_2 \beta_{03}) s - b_0 \beta_1 \beta_{03}}{b_0 s^3 + (\beta_2 b_0^2 + \beta_{01} b_0) s^2 + (b_0 \beta_{02} + b_0^2 \beta_1 + b_0^2 \beta_{01} \beta_2)s}$
 
 The second-order linear ADRC control system can be represented as follows:
 
