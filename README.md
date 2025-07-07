@@ -236,7 +236,7 @@ Based on the grading figure, the small-amplitude/high-frequency attitude change 
 
 In *ADS-33*, medium-amplitude/medium-low-frequency attitude changes are often used to evaluate the 'attitude quickness' of a quadrotor (whether can achieve moderate attitude changes rapidly). What kind of attitude changes can be classified as medium-amplitude/medium-low-frequency? The required attitude changes shall be made as rapidly as possible from one steady heading to another and without significant reversals in the sign of the cockpit control input relative to the trim position
 
-The evaluation criteria involves three variables: the peak attitude change $\Delta \psi_{p k}$ , the minimum attitude change $\Delta \psi_{\min }$ , and the peak angular velocity $r_{p k}$. The evaluation criteria is defined as the ratio of the peak angular velocity to the maximum attitude change after a medium-amplitude/medium-low-frequency attitude change, i.e., $\frac{r_{p k}}{\Delta \psi_{p k}}$. For a medium-amplitude/medium-low-frequency attitude change, a larger $r_{p k}$ , a smaller ${\Delta \psi_{p k}}$ and a larger $\Delta \psi_{\min }$ will result in a better evaluation rating
+The evaluation criteria involves three variables: the peak attitude change $\Delta \psi_{p k}$ , the minimum attitude change $\Delta \psi_{\min }$ , and the peak angular velocity $r_{p k}$. The evaluation criteria is defined as the ratio of the peak angular velocity to the maximum attitude change after a medium-amplitude/medium-low-frequency attitude change, i.e., $\frac{r_{p k}}{\Delta \psi_{p k}}$. For a medium-amplitude/medium-low-frequency attitude change, a larger $r_{p k}$ , a smaller ${\Delta \psi_{p k}}$ and a smaller $\Delta \psi_{\min }$ will result in a better evaluation rating
 
 Assuming a yaw attitude change of 30° , the yaw angle response and yaw rate response are shown below:
 
@@ -248,7 +248,7 @@ Assuming a yaw attitude change of 30° , the yaw angle response and yaw rate res
 
 The peak attitude change is $\Delta \psi_{p k} = 30.31°$
 
-The minimum attitude change is $\Delta \psi_{\min } = 29.79°$
+The minimum attitude change is $\Delta \psi_{\min } = 30°$
 
 The peak angular velocity is $r_{p k} = 35.2°/s$
 
