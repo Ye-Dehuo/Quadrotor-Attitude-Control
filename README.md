@@ -73,7 +73,7 @@ Rewriting in state-space form:<br>
 
 where:
 
-+ $\beta_1, ~ \beta_2$ are tunable parameters; $e_1=r_1-z_1, e_2=r_2-z_2$ are system state errors. In this design method, the TD (Tracking Differentiator) is not used, therefore $r_2 = 0$ , the system attitude error is rewritten as $e_1=r-z_1, e_2=-z_2$ (As long as $\beta1 > \beta2$, making $e_1$ a more dominant control term than $e_2$, $r_2 = 0$ will not affect the control outcome)
++ $\beta_1, ~ \beta_2$ are tunable parameters; $e_1=r_1-z_1, e_2=r_2-z_2$ are system state errors. In this design method, the TD (Tracking Differentiator) is not used, therefore $r_2 = 0$ , the system attitude error is rewritten as $e_1=r-z_1, e_2=-z_2$
 + The adjustable parameter $b_0$ is the "compensation factor" that determines the strength of the compensation
 
 ### System Transfer Function Derivation
