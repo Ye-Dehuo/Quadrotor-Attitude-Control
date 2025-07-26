@@ -358,9 +358,9 @@ For example, focusing on the YAW control channel, the system can be expressed as
 ```math
 \left \{
 \begin{align}
-\dot{y}_1 = y_2 \\
-\dot_{y}_2 = -0.25u \\
-y = y_1
+\dot{y}_1 &= y_2 \\
+\dot_{y}_2 &= -0.25u \\
+y &= y_1
 \end{align}
 \right.
 ```
@@ -376,10 +376,10 @@ Based on the ADRC algorithm, we can extend the system as:
 ```math
 \left \{
 \begin{align}
-\dot{y}_1 = y_2 \\
-\dot{y}_2 = y3 -0.25u \\
-\dot{y}_3 = \omega \left ( t \right )\\
-y = y_1
+\dot{y}_1 &= y_2 \\
+\dot{y}_2 &= y3 -0.25u \\
+\dot{y}_3 &= \omega \left ( t \right )\\
+y &= y_1
 \end{align}
 \right.
 ```
