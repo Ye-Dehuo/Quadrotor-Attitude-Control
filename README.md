@@ -359,7 +359,7 @@ For example, focusing on the YAW control channel, the system can be expressed as
 \left \{
 \begin{align}
 \dot{y}_1 &= y_2 \\
-\dot_{y}_2 &= -0.25u \\
+\dot{y}_2 &= -0.25u \\
 y &= y_1
 \end{align}
 \right.
