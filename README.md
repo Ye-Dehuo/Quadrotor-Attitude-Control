@@ -347,7 +347,7 @@ For example, focusing on the YAW control channel, the system can be expressed as
 ```math
 \left \{
 \begin{align}
-\dot{z_1} &= z_2 - \beta_{01} e, \\
+\dot{y}_1 &= y_2 \\
 \dot{z_2} &= z_3 - \beta_{02} e + b_0 u(t), \\
 \dot{z_3} &= -\beta_{03} e.
 \end{align}
