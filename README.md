@@ -354,7 +354,7 @@ y &= y_1
 \right.
 ```
 
-Here, $y$ is the system output. $y_1$ is the yaw angle; $y_2$ is the yaw velocity; $u$ is the control input in YAW channel
+Here, $y$ is the system output; $y_1$ is the yaw angle; $y_2$ is the yaw velocity; $u$ is the control input in YAW channel
 
 Clearly, there is no disturbance term exists in the system
 
