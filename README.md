@@ -21,7 +21,7 @@ The state-space equation for a three-degree-of-freedom (attitude) quadrotor hove
 
 where:
 
-+ $y​$ is the yaw angle, $p​$ is the pitch angle, and $r$​ is the roll angle
++ ​$y$ is the yaw angle, $p$ is the pitch angle, and $r$ is the roll angle
 
 + $v_f$, $v_b$, $v_r$, $v_l$ represent the control voltages applied to the front, rear, right, and left rotors, respectively
 
@@ -337,6 +337,45 @@ The open-loop system has three poles at the origin, making it a Type III system.
 ![alt](/img/Acceleration_Signal_Input_Block_Diagram.png)
 
 ![alt](/img/Acceleration_Signal_Response_Error.png)
+
+## Disturbance in the control system
+
+In the above reasereach, we do not consider the disturbance in the system
+
+For example, focusing on the YAW control channel, the system can be expressed as:
+
+```math
+\left \{
+\begin{align}
+\dot{y}_1 = y_2 \\
+\dot_{y}_2 = -0.25u \\
+y = y_1
+\end{align}
+\right.
+```
+
+Here, $y_1$ is the yaw angle; $y_2$ is the yaw velocity; $u$ is the control input in YAW channel
+
+Clearly, there is no disturbance term exists in the system
+
+If there is a disturbance trem exists in the system, where should it be?
+
+Based on the ADRC algorithm, we can extend the system as:
+
+```math
+\left \{
+\begin{align}
+\dot{y}_1 = y_2 \\
+\dot{y}_2 = y3 -0.25u \\
+\dot{y}_3 = \omega \left ( t \right )\\
+y = y_1
+\end{align}
+\right.
+```
+
+Here, $y_3$ is the extended state variable;  $\omega \left ( t \right )$ can be regarded as a disturbance term
+
+Theoretically, as long as the disturbance is bounded, the ESO can accurately estimate it
 
 ## References
 
