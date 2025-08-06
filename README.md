@@ -373,7 +373,7 @@ y &= y_1
 \right.
 ```
 
-Here, $y_3$ is the extended state variable;  $\omega \left ( t \right )$ can be regarded as a disturbance term
+Here, $y_3$ is the extended state variable and can be regarded as a disturbance term; $\omega \left ( t \right )$ denotes the variation rate of the extended state vector (or disturbance term)
 
 Theoretically, as long as the disturbance is bounded, the ESO can accurately estimate it
 
